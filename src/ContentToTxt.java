@@ -2,9 +2,16 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 
-import java.lang.*;
-public class ContentToTxt {
-	public static void contentToTxt(String filePath, String content) {
+/*
+ * author:zhanghh
+ * time:2018.03.18
+ * function:Write the content to the file
+ */
+
+public class ContentToTxt 
+{
+	public static void contentToTxt(String filePath, String content) 
+	{
 
         try{
 
@@ -22,3 +29,4 @@ public class ContentToTxt {
 
     }
 }
+
