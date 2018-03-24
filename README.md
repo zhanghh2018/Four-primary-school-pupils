@@ -1,4 +1,4 @@
-Calc_Demo
+Four-primary-school-pupils
 
 计算器示例项目，向result.txt中写入“学号+算式”，演示文件层次结构
 
@@ -26,8 +26,4 @@ run.bat为自动运行测试脚本，使用其它操作系统的同学请自行�
 运行方式：
 
 在命令行中运行run.bat文件，所有java文件自动编译运行
-
-文件解释：
-
-/src ContentToTxt:(将结果写入文件) Main.java:(主程序可以从命令行接收参数) Polish.java:(逆波兰表达式) Randomequal.java：(产生等式) /result.txt:(运行后产生的结果)
 
