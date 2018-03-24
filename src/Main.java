@@ -33,38 +33,38 @@ public class Main {
 		//Number of output titles
 		
 		Scanner num = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÏëÒª²úÉúµÄÌâÄ¿¸öÊı(1~1000ÒÔÄÚµÄÊı×Ö):");
+		System.out.println("è¯·è¾“å…¥æƒ³è¦äº§ç”Ÿçš„é¢˜ç›®ä¸ªæ•°(1~1000ä»¥å†…çš„æ•°å­—):");
 		while(questionAmount < 1||questionAmount > 1000){
 		        
 		    try{
 		    	questionAmount = num.nextInt();
 		     }catch(Exception e){
-		         System.out.println("¶Ô²»Æğ£¬ÇëÊäÈë1~1000ÒÔÄÚµÄÊı×Ö");
+		         System.out.println("å¯¹ä¸èµ·ï¼Œè¯·è¾“å…¥1~1000ä»¥å†…çš„æ•°å­—");
 		         num.next();
 		         questionAmount = -1;
 		     }
 		    
 		    if((questionAmount < 1 || questionAmount > 1000) && questionAmount != -1){
-		    	 System.out.println("¶Ô²»Æğ£¬ÇëÊäÈë1~1000ÒÔÄÚµÄÊı×Ö");
+		    	 System.out.println("å¯¹ä¸èµ·ï¼Œè¯·è¾“å…¥1~1000ä»¥å†…çš„æ•°å­—");
 		    }
 		} 
 		
 		//The scope of the output equation result
 		
-		System.out.println("ÇëÊäÈëÔËËã½á¹ûµÄ·¶Î§(Êı×Ö)£º");
+		System.out.println("è¯·è¾“å…¥è¿ç®—ç»“æœçš„èŒƒå›´(æ•°å­—)ï¼š");
 		while(result < 1)
 		{
 		        
 		    try{
 		    	result = num.nextInt();
 		     }catch(Exception e){
-		         System.out.println("¶Ô²»Æğ£¬ÇëÊäÈëÊı×Ö(´óÓÚ1):");
+		         System.out.println("å¯¹ä¸èµ·ï¼Œè¯·è¾“å…¥æ•°å­—(å¤§äº1):");
 		         num.next();
 		         result = -1;
 		     }
 		    
 		    if(result != -1&&result < 1){
-		    	System.out.println("¶Ô²»Æğ£¬ÇëÊäÈëÊı×Ö(´óÓÚ1):");
+		    	System.out.println("å¯¹ä¸èµ·ï¼Œè¯·è¾“å…¥æ•°å­—(å¤§äº1):");
 		    }   
 		}  
 		
@@ -72,7 +72,7 @@ public class Main {
 		
 		String strFilePath = "result.txt";
 		String strStuentId = "201571030135";
-		System.out.println("ÕıÔÚÉú³ÉÌâÄ¿£¬ÇëÉÔºó......");
+		System.out.println("æ­£åœ¨ç”Ÿæˆé¢˜ç›®ï¼Œè¯·ç¨å......");
 		BufferedWriter bw = new BufferedWriter(new FileWriter(strFilePath));
 		contentToTxt.contentToTxt(strFilePath,strStuentId);
 		contentToTxt.contentToTxt(strFilePath,String.valueOf("\n"));
@@ -87,8 +87,7 @@ public class Main {
 				
 				contentToTxt.contentToTxt(strFilePath,String.valueOf(randoms+reversePolish.reversePolish(randoms)));
 				contentToTxt.contentToTxt(strFilePath,String.valueOf("\n"));
-			}
-			else{
+			}else{
 				i--;
 			}
 		}
